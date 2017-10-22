@@ -30,7 +30,7 @@ op:
   inputs:
     startUrl:
     startData:
-  outputs
+  outputs:
     instanceId:
 ```
 
