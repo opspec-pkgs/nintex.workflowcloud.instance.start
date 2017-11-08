@@ -1,26 +1,29 @@
 name: github.com/opspec-pkgs/nintex.workflowcloud.instance.start
 description: starts a nintex workflow cloud workflow instance
 inputs:
-  startUrl:
+  urlWithToken:
     string:
       constraints: { minLength: 1, format: uri }
       description: 'start url (w/token) of workflow'
-  startData:
+  requestContent:
     object:
-      description: start data used to populate workflow start event variables
-      default: {}
+      description: start request content
+      default: {
+        startData: {},
+        options: {}
+      }
 outputs:
   instanceId:
     string:
       description: id of the started workflow instance
-version: 1.0.0
+version: 2.0.0
 run:
   container:
-    image: { ref: 'opspecpkgs/nintex.workflowcloud.instance.start:1.0.0' }
+    image: { ref: 'opspecpkgs/nintex.workflowcloud.instance.start:2.0.0' }
     cmd: [ /cmd.sh ]
     envVars:
-      startUrl:
+      urlWithToken:
     files:
       /cmd.sh:
-      /startData: $(startData)
+      /requestContent: $(requestContent)
       /instanceId: $(instanceId)
