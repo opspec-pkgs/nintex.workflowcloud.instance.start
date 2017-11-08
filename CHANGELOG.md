@@ -5,4 +5,10 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
+## \[2.0.0] - 2017-11-07
+
+### Added
+
+- support full start request content; not only startData
+
 ## \[1.0.0] - 2017-10-21

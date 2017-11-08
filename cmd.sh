@@ -9,8 +9,8 @@ statusCode=$(curl \
     --output \
     /response \
     --write-out "%{http_code}" \
-    -X POST "${startUrl}" \
-    -d @/startData \
+    -X POST "${urlWithToken}" \
+    -d @/requestContent \
     --header "Content-Type: application/json")
 
 if test "$statusCode" -ne 202; then
