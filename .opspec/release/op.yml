@@ -25,6 +25,9 @@ inputs:
   pkg:
     dir:
       default: .
+outputs:
+  pkg:
+    dir: {}
 run:
   serial:
     - op:
@@ -34,8 +37,9 @@ run:
           pkg:
         outputs:
           imageTar:
+          pkg:
     - op:
-        pkg: { ref: github.com/opspec-pkgs/docker.image.push#1.1.0 }
+        pkg: { ref: github.com/opspec-pkgs/docker.image.push#2.0.0 }
         inputs:
           imageTar:
           imageName: 'opspecpkgs/nintex.workflowcloud.instance.start:$(version)'
