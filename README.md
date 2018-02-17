@@ -29,7 +29,9 @@ op:
   pkg: { ref: github.com/opspec-pkgs/nintex.workflowcloud.instance.start#2.0.0 }
   inputs:
     urlWithToken:
+    # begin optional params
     requestContent:
+    # end optional params
   outputs:
     instanceId:
 ```
