@@ -5,6 +5,12 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
+## \[2.0.1] - 2018-02-18
+
+### Added
+
+- icon
+
 ## \[2.0.0] - 2017-11-07
 
 ### Added
@@ -12,3 +18,4 @@ All notable changes will be documented in this file in accordance with
 - support full start request content; not only startData
 
 ## \[1.0.0] - 2017-10-21
+
