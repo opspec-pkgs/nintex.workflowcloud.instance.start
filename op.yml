@@ -16,7 +16,6 @@ outputs:
   instanceId:
     string:
       description: id of the started workflow instance
-icon: /icon.svg
 version: 2.0.1
 run:
   container:
