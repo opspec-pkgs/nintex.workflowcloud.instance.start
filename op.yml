@@ -16,10 +16,10 @@ outputs:
   instanceId:
     string:
       description: id of the started workflow instance
-version: 2.0.1
+version: 2.1.0
 run:
   container:
-    image: { ref: 'opspecpkgs/nintex.workflowcloud.instance.start:2.0.1' }
+    image: { ref: 'opspecpkgs/nintex.workflowcloud.instance.start:2.1.0' }
     cmd: [ /cmd.sh ]
     envVars:
       urlWithToken:
